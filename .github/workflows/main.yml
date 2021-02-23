@@ -1,8 +1,10 @@
 name: Damage Calculation Test
-
+#name: ワークフローの名前
 on:
+#on: 必須動かす時のトリガーになるGitHubのイベント下の例だとpush。その他pullとか。
   push:
-    branches: [ master ]
+    branches:
+      - master
 
 jobs:
   build:
