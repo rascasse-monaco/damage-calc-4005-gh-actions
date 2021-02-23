@@ -1,4 +1,4 @@
-![Damage Calculation Test](https://github.com/rascasse-monaco/damage-calc-4005-gh-actions/workflows/Damage Calculation Test/badge.svg)
+![Damage Calculation Test](https://github.com/rascasse-monaco/damage-calc-4005-gh-actions/workflows/Damage%20Calculation%20Test/badge.svg)
 # damage-calc
 このモジュールでは、ダメージ計算を行うことができます。  
 ダメージ計算には
