@@ -7,11 +7,19 @@ on:
       - master
 
 jobs:
-  buildddd:
-
+  build:
+#このbuild:　はjobID文字列でつくる。英字または_で始める必要があり、英数字と-、_しか使用できない。
     runs-on: ubuntu-latest
 
     steps:
+    - name: Print a greeting
+      env:
+        MY_VAR: Hi! My name is
+        FIRST_NAME: Monaco
+        MIDDLE_NAME: The
+        LAST_NAME: Rascasse
+      run: |
+        echo $MY_VAR $FIRST_NAME $MIDDLE_NAME $LAST_NAME.
     - uses: actions/checkout@v2
     - name: Use Node.js v10.14.2
       uses: actions/setup-node@v1
