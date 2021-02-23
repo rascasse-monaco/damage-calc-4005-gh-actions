@@ -7,6 +7,8 @@ on:
       - master
 
 jobs:
+  builddd:
+
   runs-on: ubuntu-latest
 
   steps:
@@ -15,7 +17,7 @@ jobs:
     uses: actions/setup-node@v1
     with:
       node-version: '10.14.2'
-
+      
   - run: yarn install
   - name: Install JUnit coverage reporter
     run: yarn add --dev jest-junit
